@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+	<!-- Formulario basico (Ejemplo basado en el de https://www.htmlquick.com/es/tutorials/forms/4.html) -->
+
+	<!-- USO DEL FORM MONTADO EN XAMPP EN LOCAL (DESCOMENTA ESTA LÍNEA) -->
+	<!--
+	<form action="envio.php" target="_blank" method="POST">
+	-->
+
+	<!-- USO DEL FORM REMOTO DE TESTEO -->
+	<form action="https://formtester.goodbytes.be/post.php" method="post">
+
+		<h1>FORMULARIO DE CONTACTO</h1>
+		<p>Este form se envía a una web de terceros, no introduzcas información personal ni contraseñas.</p>
+		<p>Tu nombre: <input type="text" name="nombre"></p>
+
+		<p>Tu dirección de correo: <input type="text" name="correo"></p>
+
+		<p>Tu mensaje:<br>
+			<textarea name="mensaje"></textarea>
+		</p>
+
+		<p>Quieres que te contestemos por email?
+			<select name="envioEmail">
+				<option value="si">Si
+				<option value="no">No
+			</select>
+		</p>
+		<input type="radio" id="Alumno" name="Insti" value="Alumno">
+		<label for="Alumno">Alumno</label><br>
+		<input type="radio" id="Profesor" name="Insti" value="Profesor">
+		<label for="Profesor">Profesor</label><br>
+		<input type="radio" id="Usuario externo" name="Insti" value="Usuario externo">
+		<label for="Usuario externo">Usuario externo</label><br>
+		<p>
+			<a href="mailto:miguelmv.alumno@iesiniesta.es">Correo de CONTACTO</a>
+		</p>
+
+
+		<input type="submit" value="Enviar mensaje">
+	</form>
+</body>
+
+</html>
